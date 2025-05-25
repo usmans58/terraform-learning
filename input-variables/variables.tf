@@ -30,3 +30,10 @@ variable "prefix-list" {
   default     = ["Mr.", "Ms.", "Dr."]
   
 }
+variable "file-content-map"{
+  type = map(string)
+  default = {
+    "statement1" = "This is the first statement.",
+    "statement2" = "This is the second statement.",
+  }
+}
