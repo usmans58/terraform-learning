@@ -1,0 +1,5 @@
+filename = "example.txt"
+content = "This is a sample content for the file."
+prefix = "pet"
+separator = "."
+length = "1"
