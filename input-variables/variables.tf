@@ -57,3 +57,9 @@ variable "object-pet"{
     food = ["bones", "meat", "fish"]
   }
 }
+variable "cat-tuple" {
+  description = "A tuple containing a string and a number"
+  type = tuple([string, number,bool])
+  default = ["Whiskers", 3,true]
+
+}
