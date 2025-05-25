@@ -24,3 +24,9 @@ variable "length" {
   type        = string
   default     = "1"
 }
+variable "prefix-list" {
+  description = "A list of prefixes for the random pet name"
+  type        = list(string)
+  default     = ["Mr.", "Ms.", "Dr."]
+  
+}
