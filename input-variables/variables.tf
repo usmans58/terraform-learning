@@ -50,4 +50,10 @@ variable "object-pet"{
     is-favorite = string
     food = list(string)
   })
+  default = {
+    name = "Buddy"
+    age = 5
+    is-favorite = "yes"
+    food = ["bones", "meat", "fish"]
+  }
 }
