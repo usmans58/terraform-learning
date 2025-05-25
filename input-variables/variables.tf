@@ -42,3 +42,12 @@ variable "set"{
   default = ["apple", "banana", "cherry"]
   description = "A set of fruits"
 }
+variable "object-pet"{
+  description = "values for the object pet"
+  type=object({
+    name = string
+    age  = number
+    is-favorite = string
+    food = list(string)
+  })
+}
