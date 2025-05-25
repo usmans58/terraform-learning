@@ -37,3 +37,8 @@ variable "file-content-map"{
     "statement2" = "This is the second statement.",
   }
 }
+variable "set"{
+  type = set(string)
+  default = ["apple", "banana", "cherry"]
+  description = "A set of fruits"
+}
