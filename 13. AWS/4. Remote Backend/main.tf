@@ -19,3 +19,12 @@ resource "aws_dynamodb_table" "terraform_locks" {
   
 
 }
+
+terraform {
+  backend "s3" {
+    bucket         = "your-tf-state-bucket"
+    key            = "env/prod/terraform.tfstate"
+    region         = "YOUR_REGION"
+    encrypt        = true
+  }
+}
