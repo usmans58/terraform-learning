@@ -18,3 +18,14 @@ resource "aws_instance" "second_ec2" {
   tags = local.default
 
 }
+
+
+
+locals {
+  tags = {
+    Owner     = "DevOps Team"
+    ManagedBy = "Terraform"
+  }
+
+  bucket_name = lower("MyProject-${random_id.bucket_suffix.hex}")
+}
